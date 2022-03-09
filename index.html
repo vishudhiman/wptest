@@ -31,6 +31,13 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--icons-->
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
@@ -81,15 +88,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="service.html"> Services </a>
                   </li>
-                  <!-- <li class="nav-item">
-                  <a class="nav-link" href="news.html"> News</a>
-                </li> -->
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="btn-box1" href="tel:+91-9557686253"
+                      ><i class="fa fa-phone"></i><span>Call Now</span></a
+                    >
                   </li>
-                  <!--  <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
-                </li> -->
                 </ul>
               </div>
             </div>
@@ -173,12 +176,57 @@
               <div class="slider_form">
                 <h4>Get A Taxi Now</h4>
                 <form action="">
-                  <input type="text" placeholder="Car Type" />
-                  <input type="text" placeholder="Pick Up Location" />
-                  <input type="text" placeholder="Drop Location" />
+                  <div class="c-form">
+                    <label for="cars" class="c-form-label"
+                      >Choose Your Car:</label
+                    >
+                    <select name="cars" id="cars" class="c-form-select">
+                      <option>Choose Your Car</option>
+                      <option value="volvo">Swift</option>
+                      <option value="saab">Etios</option>
+                      <option value="opel">Wagonr</option>
+                    </select>
+                  </div>
+                  <div class="c-form">
+                    <label for="location" class="c-form-label"
+                      >Pick Up Location:</label
+                    >
+                    <select name="location" id="location" class="c-form-select">
+                      <option>Pick Up</option>
+                      <option value="Dehradun">Dehradun</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Haridwar">Haridwar</option>
+                      <option value="Rishikesh">Rishikesh</option>
+                    </select>
+                  </div>
+                  <div class="c-form">
+                    <label for="location" class="c-form-label"
+                      >Pick Up Date:</label
+                    >
+                    <input type="date" class="c-form-date" />
+                  </div>
+                  <div class="c-form">
+                    <label for="location" class="c-form-label"
+                      >Drop Off Location:</label
+                    >
+                    <select name="location" id="location" class="c-form-select">
+                      <option>Drop Off</option>
+                      <option value="Dehradun">Dehradun</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Haridwar">Haridwar</option>
+                      <option value="Rishikesh">Rishikesh</option>
+                      <option value="Nanital">Nainital</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                    </select>
+                  </div>
+                  <div class="btm_input c-form">
+                    <label for="location" class="c-form-label"
+                      >Your Mobile Number:</label
+                    >
+                    <input type="tel" placeholder="Your Phone Number" />
+                  </div>
                   <div class="btm_input">
-                    <input type="text" placeholder="Your Phone Number" />
-                    <button>Book Now</button>
+                    <button>Submit Booking Request</button>
                   </div>
                 </form>
               </div>
@@ -283,6 +331,56 @@
     </section>
 
     <!-- end service section -->
+    <!-- pricing section -->
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Pricing <br />
+          Table
+        </h2>
+      </div>
+      <table>
+        <tr>
+          <th style="font-size: 15px; font-weight: 800">
+            <i class="fa fa-map-marker"></i> Destination
+          </th>
+          <th><i class="fa fa-rupee"></i> Rate</th>
+        </tr>
+        <tr>
+          <td>Delhi To Dehradun</td>
+          <td>4500</td>
+        </tr>
+        <tr>
+          <td>Dehradun To Delhi</td>
+          <td>4500</td>
+        </tr>
+        <tr>
+          <td>Dehradun To Haldwani</td>
+          <td>6000</td>
+        </tr>
+        <tr>
+          <td>Haridwar To Delhi</td>
+          <td>4000</td>
+        </tr>
+        <tr>
+          <td>Delhi To Haridwar</td>
+          <td>4000</td>
+        </tr>
+        <tr>
+          <td>Rishikesh To Delhi</td>
+          <td>4500</td>
+        </tr>
+        <tr>
+          <td>Delhi To Rishikesh</td>
+          <td>4500</td>
+        </tr>
+        <tr>
+          <td>Dehradun To Nainital</td>
+          <td>7500</td>
+        </tr>
+      </table>
+    </div>
+    <!--pricing section-->
 
     <!-- news section -->
     <!-- 
@@ -595,42 +693,10 @@
     <section class="info_section layout_padding-top layout_padding2-bottom">
       <div class="container">
         <div class="box">
-          <!-- <div class="info_form">
-          <h4>
-            Subscribe Our Newsletter
-          </h4>
-          <form action="">
-            <input type="text" placeholder="Enter your email">
-            <div class="d-flex justify-content-end">
-              <button>
-
-              </button>
-            </div>
-          </form>
-        </div> -->
-          <div class="info_links">
-            <ul>
-              <li class=" ">
-                <a class="" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="">
-                <a class="" href="about.html"> About</a>
-              </li>
-              <li class="">
-                <a class="" href="service.html"> Services </a>
-              </li>
-              <!-- <li class="">
-              <a class="" href="news.html"> News</a>
-            </li> -->
-              <li class="">
-                <a class="" href="contact.html">Contact Us</a>
-              </li>
-              <!--  <li class="">
-              <a class="" href="#">Login</a>
-            </li> -->
-            </ul>
+          <div class="contact-details">
+            <h5>Shivanshi Taxi Service</h5>
+            <h5>42/5 Saraswati soni marg,Laxman chowk ,Dehradun</h5>
+            <h5>+91-9557686253,9897881179</h5>
           </div>
           <div class="info_social">
             <div>
