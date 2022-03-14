@@ -3,6 +3,22 @@
 html {
   overflow-x: hidden;
 }
+html {
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -247,12 +263,12 @@ a:focus {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 3rem;
+  font-family: "Caveat";
 }
 
 .slider_section .box .img-box {
   margin: 0 7%;
 }
-
 .slider_section .box .img-box img {
   width: 100%;
 }
@@ -461,6 +477,9 @@ a:focus {
 .service_section .service_container .box .detail-box h5 {
   font-weight: bold;
 }
+.service_section .service_container .box .detail-box p {
+  max-width: 350px;
+}
 
 .service_section .service_container .box .detail-box a {
   display: inline-block;
@@ -620,12 +639,12 @@ tr:nth-child(even) {
   position: relative;
 }
 
-.client_section .box .img-box {
-  max-width: 125px;
-  min-width: 125px;
+.client_section .box .detail-box .img-box {
+  max-width: 200px;
+  min-width: 200px;
 }
 
-.client_section .box .img-box img {
+.client_section .box .detail-box .img-box img {
   width: 100%;
 }
 
@@ -648,8 +667,10 @@ tr:nth-child(even) {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
-  background-color: #f7c621;
+  height: 100%;
+  background-color: whitesmoke;
+  /*background-image: url("https://newsonair.com/wp-content/uploads/2021/09/char.jpg");*/
+  /*opacity: 0.4;*/
   z-index: 1;
 }
 
@@ -1022,4 +1043,30 @@ tr:nth-child(even) {
 .footer_section a {
   color: #000000;
 }
-/*# sourceMappingURL=style.css.map */
+/*unique pages*/
+.details_section {
+  max-width: 800px;
+  margin: auto;
+}
+.details_section .detail-box h4 {
+  color: #05445e;
+}
+.details_section .detail-box img {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 20px 0px;
+}
+.details_section .detail-box p span {
+  font-weight: bold;
+}
+.routes {
+  max-width: 1000px;
+  margin: auto;
+}
+.routes h2 {
+  color: #05445e;
+  text-align: center;
+  font-weight: bold;
+}
