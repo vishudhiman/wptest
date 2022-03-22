@@ -544,7 +544,7 @@ tr:nth-child(even) {
 }
 
 .news_section .news_container .box {
-  margin: 0 20px;
+  margin: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,6 +555,7 @@ tr:nth-child(even) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: 400px;
 }
 
 .news_section .news_container .box .img-box {
